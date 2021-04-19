@@ -40,7 +40,7 @@
 
         if(!confirm(msg)) return;
         
-        const garagem = getGaragem().filter(c => c.Placa !== Placa);
+        const garagem = getGaragem().filter(c => c.placa !== Placa);
         localStorage.garagem = JSON.stringify(garagem);
 
         atualizarGaragem();
